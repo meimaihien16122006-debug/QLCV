@@ -1,3 +1,10 @@
+
 <resources>
-    <string name="app_name">QuanLyCongViec</string>
+    <string name="app_name">Quan Ly Cong Viec</string>
+    <string name="tieu_de">QUAN LY CONG VIEC CA NHAN</string>
+    <string name="thong_tin_sinh_vien">Ho ten: Doan Thi Mai Hien\nMSSV: 241505312217\nLop: 24T1</string>
+    <string name="nhap_ten_cong_viec">Nhap ten cong viec</string>
+    <string name="nhap_mo_ta">Nhap mo ta cong viec</string>
+    <string name="tao_cong_viec">Tao cong viec</string>
+    <string name="xem_danh_sach">Xem danh sach cong viec</string>
 </resources>
