@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="CHI TIET CONG VIEC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ten cong viec:"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvTenCongViec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ten cong viec hien thi o day"
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mo ta:"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvMoTa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mo ta cong viec hien thi o day"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+</LinearLayout>
