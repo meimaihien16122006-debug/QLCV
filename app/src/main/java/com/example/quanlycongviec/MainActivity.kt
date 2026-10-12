@@ -1,20 +1,47 @@
+
 package com.example.quanlycongviec
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.quanlycongviec.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnTaoCongViec.setOnClickListener {
+            val tenCongViec =
+                binding.edtTenCongViec.text.toString().trim()
+
+            val moTa =
+                binding.edtMoTa.text.toString().trim()
+
+            if (tenCongViec.isEmpty()) {
+                binding.edtTenCongViec.error =
+                    "Vui long nhap ten cong viec"
+                return@setOnClickListener
+            }
+
+            Toast.makeText(
+                this,
+                "Da nhap cong viec: $tenCongViec",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+
+        binding.btnXemDanhSach.setOnClickListener {
+            Toast.makeText(
+                this,
+                "Chuc nang danh sach se duoc bo sung",
+                Toast.LENGTH_SHORT
+            ).show()
         }
     }
 }
