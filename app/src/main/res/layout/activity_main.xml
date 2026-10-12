@@ -1,19 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvTieuDe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/tieu_de"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvThongTinSinhVien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/thong_tin_sinh_vien"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtTenCongViec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:hint="@string/nhap_ten_cong_viec"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/edtMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:autofillHints="none"
+            android:gravity="top"
+            android:hint="@string/nhap_mo_ta"
+            android:inputType="textMultiLine"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnTaoCongViec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tao_cong_viec" />
+
+        <Button
+            android:id="@+id/btnXemDanhSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/xem_danh_sach" />
+
+    </LinearLayout>
+</ScrollView>
