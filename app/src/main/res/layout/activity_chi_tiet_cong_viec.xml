@@ -43,5 +43,9 @@
         android:text="Mo ta cong viec hien thi o day"
         android:textSize="16sp"
         android:padding="8dp" />
-
+    <Button
+        android:id="@+id/btnChinhSua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chinh sua" />
 </LinearLayout>
