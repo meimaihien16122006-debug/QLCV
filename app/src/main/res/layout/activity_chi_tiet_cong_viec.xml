@@ -48,4 +48,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Chinh sua" />
+    <TextView
+        android:id="@+id/tvTrangThai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Trạng thái: Chưa hoàn thành"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnHoanThanh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đánh dấu hoàn thành" />
 </LinearLayout>
